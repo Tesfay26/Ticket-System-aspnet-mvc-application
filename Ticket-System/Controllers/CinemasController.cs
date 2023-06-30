@@ -14,7 +14,7 @@ namespace Ticket_System.Controllers
         public async Task<IActionResult> Index()
         {
             var data = await _dbContext.Cinemas.ToListAsync();
-            return View();
+            return View(data);
         }
     }
 }
