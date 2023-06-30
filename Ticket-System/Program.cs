@@ -1,4 +1,9 @@
+using Ticket_System.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//DbContest configuration
+builder.Services.AddDbContext<AppDBContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

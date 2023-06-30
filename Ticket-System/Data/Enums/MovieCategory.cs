@@ -1,4 +1,4 @@
-﻿namespace Ticket_System.Data
+﻿namespace Ticket_System.Data.Enums
 {
     public enum MovieCategory
     {
