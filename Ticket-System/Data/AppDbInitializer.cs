@@ -10,6 +10,7 @@ namespace Ticket_System.Data
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
                 var context = serviceScope.ServiceProvider.GetService<AppDBContext>();
+                //database will be created if doesn't existed
                 context.Database.EnsureCreated();
 
                 //Cinema
