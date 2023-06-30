@@ -13,7 +13,7 @@ namespace Ticket_System.Controllers
         public IActionResult Index()
         {
             var data = _dbContext.Actors.ToList();
-            return View();
+            return View(data);
         }
     }
 }
