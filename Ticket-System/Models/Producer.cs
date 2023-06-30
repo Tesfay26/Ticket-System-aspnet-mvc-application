@@ -9,5 +9,8 @@ namespace Ticket_System.Models
         public string ProfilePictureUrl { get; set; }
         public string FullName { get; set; }
         public string Biography { get; set; }
+
+        //Relationships
+        public List<Movie> Movies { get; set; }
     }
 }
