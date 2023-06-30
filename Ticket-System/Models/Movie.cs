@@ -1,4 +1,4 @@
-﻿using Ticket_System.Data;
+﻿using Ticket_System.Data.Enums;
 
 namespace Ticket_System.Models
 {
