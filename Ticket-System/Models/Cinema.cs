@@ -6,9 +6,9 @@ namespace Ticket_System.Models
     {
         [Key]
         public int Id { get; set; }
-        [Display(Name = "Logo")]
+        [Display(Name = "Cinema Logo")]
         public string Logo { get; set; }
-		[Display(Name = "Name")]
+		[Display(Name = "Cinema Name")]
 		public string Name { get; set; }
 		[Display(Name = "Description")]
 		public string Description { get; set; }

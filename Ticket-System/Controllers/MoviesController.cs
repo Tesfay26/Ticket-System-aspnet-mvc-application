@@ -13,7 +13,7 @@ namespace Ticket_System.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var data = await _dbContext.Movies.ToListAsync();
+            var data = await _dbContext.Movies.Include(c=>c.Cinema).OrderBy(n=>n.Name).ToListAsync();
             return View(data);
         }
     }
